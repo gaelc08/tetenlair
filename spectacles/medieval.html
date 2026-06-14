@@ -41,8 +41,7 @@
 <div class="info-item"><div class="info-label">Ambiance</div><div class="info-value">Fantastique médiéval</div></div>
     </div>
     <h2 class="gallery-title">Galerie Photos</h2>
-    <div class="photo-grid">
-<a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109422/tenac/tenac/medieval/005.jpg" class="glightbox" data-gallery="medieval">
+    <div class="photo-grid"><a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109422/tenac/tenac/medieval/005.jpg" class="glightbox" data-gallery="medieval">
   <img src="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109422/tenac/tenac/medieval/005.jpg" alt="Médiéval Fantastique 1" loading="lazy">
 </a>
 <a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109424/tenac/tenac/medieval/008.jpg" class="glightbox" data-gallery="medieval">
@@ -102,7 +101,7 @@
 <a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266641/tenac/tenac/medieval/11391220_10205062101967079_3707375461766388236_n.jpg" class="glightbox" data-gallery="medieval">
   <img src="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266641/tenac/tenac/medieval/11391220_10205062101967079_3707375461766388236_n.jpg" alt="Médiéval Fantastique 20" loading="lazy">
 </a>
-<a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266642/tenac/tenac/medieval/11391649_10205062089406765_8023128410571633563_n.jpg" class="glightbox" data-gallery="medieval">
+<div id="more-photos" style="display:none"><a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266642/tenac/tenac/medieval/11391649_10205062089406765_8023128410571633563_n.jpg" class="glightbox" data-gallery="medieval">
   <img src="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266642/tenac/tenac/medieval/11391649_10205062089406765_8023128410571633563_n.jpg" alt="Médiéval Fantastique 21" loading="lazy">
 </a>
 <a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776266644/tenac/tenac/medieval/11393046_10205056686631699_6321611196284151082_n.jpg" class="glightbox" data-gallery="medieval">
@@ -234,6 +233,24 @@
 <a href="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109470/tenac/tenac/medieval/medieval-15.jpg" class="glightbox" data-gallery="medieval">
   <img src="https://res.cloudinary.com/dy5tloznq/image/upload/v1776109470/tenac/tenac/medieval/medieval-15.jpg" alt="Médiéval Fantastique 64" loading="lazy">
 </a>
+</div>
+
+<div style="text-align:center; margin:2rem 0">
+    <button id="load-more-btn" onclick="
+        document.getElementById('more-photos').style.display='grid';
+        document.getElementById('more-photos').className='photo-grid';
+        this.style.display='none';
+    " style="
+        background:#4c51bf;
+        color:white;
+        padding:1rem 2rem;
+        border:none;
+        border-radius:8px;
+        font-size:1.1rem;
+        cursor:pointer;
+        box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    ">📸 Voir 44 photos supplémentaires</button>
+</div>
 </div>
     <div class="page-cta">
         <a href="../index.html#spectacles" class="btn">← Nos Spectacles</a>
