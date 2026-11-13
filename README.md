@@ -21,11 +21,11 @@ La compagnie propose des spectacles thématiques pour événements publics et pr
 ## 🛠️ Stack technique
 
 - **HTML/CSS/JS** statique pur
-- **Génération :** Scripts Python (`build_pages.py`) — non versionnés dans ce repo
+- **Pages :** fichiers HTML édités directement dans ce dépôt, sans étape de génération (les anciens scripts Python `build_pages.py` ne sont plus utilisés)
 - **Polices :** Playfair Display + Raleway (Google Fonts)
 - **Galeries photo :** [GLightbox](https://biati-digital.github.io/glightbox/)
 - **Images :** Hébergées sur [Cloudinary](https://cloudinary.com/)
-- **Déploiement :** Netlify
+- **Déploiement :** Netlify, automatique à chaque push sur `main` (GitHub Actions, `.github/workflows/deploy.yml`)
 
 ## 🌐 Domaines
 
